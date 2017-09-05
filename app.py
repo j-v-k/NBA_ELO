@@ -3,11 +3,10 @@ from flask_restful import Resource, Api
 from sqlalchemy import create_engine
 from json import dumps
 from flask.ext.jsonpify import jsonify
-import sqlalchemy
+from flask.ext.sqlalchemy import SQLAlchemy
 #import pyodbc
 import urllib.parse
 import sqlite3
-db = SQLAlchemy(app)
 #conn = sqlite3.connect(r"C:\Users\James\Documents\GitHub\python_rest\players.db")
 
 
