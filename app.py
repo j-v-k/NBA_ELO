@@ -4,7 +4,7 @@ from sqlalchemy import create_engine
 from json import dumps
 from flask.ext.jsonpify import jsonify
 from flask.ext.sqlalchemy import SQLAlchemy
-from flask.ext.heroku import Heroku
+#from flask.ext.heroku import Heroku
 #import pyodbc
 import urllib.parse
 import sqlite3
@@ -14,7 +14,7 @@ import sqlite3
 #db_connect = create_engine('sqlite:///players.db')
 app = Flask(__name__)
 api = Api(app)
-heroku = Heroku(app)
+#heroku = Heroku(app)
 db = SQLAlchemy(app)
 #cnxn = sqlalchemy.create_engine('mssql+pyodbc:///?odbc_connect={}'.format(quoted))
 
