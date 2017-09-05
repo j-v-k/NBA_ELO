@@ -6,7 +6,6 @@ from flask.ext.jsonpify import jsonify
 import SQLAlchemy
 #import pyodbc
 import urllib.parse
-import sqlalchemy
 import sqlite3
 db = SQLAlchemy(app)
 #conn = sqlite3.connect(r"C:\Users\James\Documents\GitHub\python_rest\players.db")
