@@ -3,7 +3,7 @@ from flask_restful import Resource, Api
 from sqlalchemy import create_engine
 from json import dumps
 from flask.ext.jsonpify import jsonify
-import pyodbc
+#import pyodbc
 import urllib.parse
 import sqlalchemy
 import sqlite3
@@ -14,6 +14,8 @@ db = SQLAlchemy(app)
 #db_connect = create_engine('sqlite:///players.db')
 app = Flask(__name__)
 api = Api(app)
+heroku = Heroku(app)
+db = SQLAlchemy(app)
 #cnxn = sqlalchemy.create_engine('mssql+pyodbc:///?odbc_connect={}'.format(quoted))
 
 class Players(Resource):
