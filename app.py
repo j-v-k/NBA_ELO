@@ -9,7 +9,7 @@ from flask.ext.sqlalchemy import SQLAlchemy
 import urllib.parse
 import sqlite3
 #conn = sqlite3.connect(r"C:\Users\James\Documents\GitHub\python_rest\players.db")
-
+import os
 
 #db_connect = create_engine('sqlite:///players.db')
 
