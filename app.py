@@ -12,9 +12,9 @@ import sqlite3
 
 
 #db_connect = create_engine('sqlite:///players.db')
+
 app = Flask(__name__)
-api = Api(app)
-#heroku = Heroku(app)
+app.config['SQLALCHEMY_DATABASE_URI'] = os.environ['DATABASE_URL']
 db = SQLAlchemy(app)
 #cnxn = sqlalchemy.create_engine('mssql+pyodbc:///?odbc_connect={}'.format(quoted))
 
