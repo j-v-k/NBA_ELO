@@ -16,6 +16,7 @@ import os
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = os.environ['DATABASE_URL']
 db = SQLAlchemy(app)
+api = Api(app)
 #cnxn = sqlalchemy.create_engine('mssql+pyodbc:///?odbc_connect={}'.format(quoted))
 
 class Players(Resource):
@@ -102,9 +103,9 @@ class Players_Respone(Resource):
         
         return {'status':'success','data': request.json}  
         
-api.add_resource(Players, '/players') # Route_1
-api.add_resource(Players_Name, '/players/<player_id>') # Route_3
-api.add_resource(Players_Respone, '/Players_Response')
+app.add_resource(Players, '/players') # Route_1
+app.add_resource(Players_Name, '/players/<player_id>') # Route_3
+app.add_resource(Players_Respone, '/Players_Response')
 api.add_resource(User_Info, '/User_Info')
 
 
