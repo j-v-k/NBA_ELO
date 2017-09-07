@@ -4,6 +4,7 @@ from sqlalchemy import create_engine
 from json import dumps
 from flask.ext.jsonpify import jsonify
 from flask.ext.sqlalchemy import SQLAlchemy
+import psycopg2
 #from flask.ext.heroku import Heroku
 #import pyodbc
 import urllib.parse
