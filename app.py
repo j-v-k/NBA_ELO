@@ -15,7 +15,7 @@ import os
 #db_connect = create_engine('sqlite:///players.db')
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = os.environ['DATABASE_URL']
+#app.config['SQLALCHEMY_DATABASE_URI'] = os.environ['DATABASE_URL']
 cnxn = psycopg2.connect("dbname='dcfvunds3mi9ke' user='xkfuywemblzisn' host='ec2-50-19-105-113.compute-1.amazonaws.com' password='627a78ad25ed73505ba7af0dbb28eeefb18acb4d6a2c2fd10fe6498c13d99cc9'") 
 api = Api(app)
 #cnxn = sqlalchemy.create_engine('mssql+pyodbc:///?odbc_connect={}'.format(quoted))
@@ -106,4 +106,4 @@ api.add_resource(User_Info, '/User_Info')
 
 
 if __name__ == '__main__':
-     app.run(port='5002')
+     app.run(debug=True)
