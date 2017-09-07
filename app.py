@@ -106,4 +106,4 @@ api.add_resource(User_Info, '/User_Info')
 
 
 if __name__ == '__main__':
-     app.run(debug=True)
+     app.run()
