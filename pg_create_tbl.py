@@ -17,7 +17,7 @@ def main():
 
         # retrieve the records from the database
         records = cursor.fetchall()
-        print records
+        print(records)
 	
 if __name__ == "__main__":
 	main()
