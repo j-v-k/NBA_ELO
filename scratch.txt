@@ -1,0 +1,2 @@
+workon Online
+cd C:\Users\James\Documents\GitHub\NBA_Ranking_App\DB
