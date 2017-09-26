@@ -11,7 +11,7 @@ def main():
         cursor.execute(sql_query) 
         #cursor.commit()
         cursor.execute("""SELECT * FROM player_choice""")
-	cursor.execute("SELECT * FROM player_choice")
+        cursor.execute("""SELECT * FROM player_choice""")
         # retrieve the records from the database
         records = cursor.fetchall()
         print(records)
