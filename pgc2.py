@@ -10,8 +10,7 @@ def main():
         sql_query = """CREATE TABLE player_choice (User_ID varchar(40) NULL,Player_1 varchar(40) NULL,Player_2 varchar(40) NULL,Player_Choice varchar(40) NULL,TimeEntered varchar(30) NULL);"""
         cursor.execute(sql_query) 
         #cursor.commit()
-        cursor.execute("SELECT * FROM player_choice")
-	print("*****************")
+        cursor.execute("""SELECT * FROM player_choice""")
 	cursor.execute("SELECT * FROM player_choice")
         # retrieve the records from the database
         records = cursor.fetchall()
