@@ -13,8 +13,7 @@ def main():
         print("connect")
         sql_query = """CREATE TABLE user_choice (Gender varchar(40) NULL,Age varchar(40) NULL,Country varchar(40) NULL,FavTeam varchar(40) NULL,TimeEntered varchar(30) NULL);"""
         sql_query = """CREATE TABLE player_choice (User_ID varchar(40) NULL,Player_1 varchar(40) NULL,Player_2 varchar(40) NULL,Player_Choice varchar(40) NULL,TimeEntered varchar(30) NULL);"""
-        
-	cursor.execute(sql_query) 
+        cursor.execute(sql_query) 
         #cursor.commit()
         cursor.execute("SELECT * FROM player_choice")
 	print("*****************")
@@ -24,4 +23,4 @@ def main():
         print(records)
 	
 if __name__ == "__main__":
-	main()
+        main()

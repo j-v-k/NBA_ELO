@@ -1,7 +1,7 @@
 workon Online
 cd C:\Users\James\Documents\GitHub\NBA_Ranking_App\DB
 
-git commit -a -m "commit" && git push heroku master
+git commit -a -m "commit" && git push heroku master && heroku run python && import pg_create_tbl
 
 function lazygit() {
     git add .
