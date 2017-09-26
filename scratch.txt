@@ -1,2 +1,10 @@
 workon Online
 cd C:\Users\James\Documents\GitHub\NBA_Ranking_App\DB
+
+git commit -a -m "commit" && git push heroku master
+
+function lazygit() {
+    git add .
+    git commit -a -m "$1"
+    git push heroku master
+}
