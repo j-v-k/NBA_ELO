@@ -1,10 +1,15 @@
 workon Online
 cd C:\Users\James\Documents\GitHub\NBA_Ranking_App\DB
 
-git commit -a -m "commit" && git push heroku master && heroku run python && import pg_create_tbl
-
+git commit -a -m "commit" && git push heroku master && heroku run python
+C:\Users\James\Documents\GitHub\NBA_Ranking_App\DB
 function lazygit() {
     git add .
     git commit -a -m "$1"
     git push heroku master
 }
+
+ssh -i NN_JVK_KEY_PAIR.pem ec2-user@52.36.102.236
+NBA_ELO.pem ec2-user@54.183.219.71
+sudo yum install git
+sudo yum install python-psycopg2
