@@ -9,7 +9,17 @@ function lazygit() {
     git push heroku master
 }
 
-ssh -i NN_JVK_KEY_PAIR.pem ec2-user@52.36.102.236
-NBA_ELO.pem ec2-user@54.183.219.71
+
+ssh -i NBA_ELO.pem ec2-user@54.193.13.227
 sudo yum install git
 sudo yum install python-psycopg2
+
+sudo yum install https://download.postgresql.org/pub/repos/yum/9.6/redhat/rhel-6-i386/pgdg-ami201503-96-9.6-2.noarch.rpm
+Install the client packages:
+sudo yum install postgresql96
+Optionally install the server packages:
+sudo yum install postgresql96-server
+Optionally initialize the database and enable automatic start:
+sudo service postgresql-9.6 initdb
+sudo chkconfig postgresql-9.6 on
+sudo service postgresql-9.6 start
